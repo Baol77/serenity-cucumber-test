@@ -1,0 +1,4 @@
+.idea/
+SERENITY_CUCUMBER_TEST/target
+target
+#GCA/src/test/resources/features

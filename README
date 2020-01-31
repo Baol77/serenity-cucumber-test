@@ -1,0 +1,5 @@
+mvn clean integration-test serenity:aggregate -pl SERENITY_CUCUMBER_TEST -am -DwebDriverCustom=chrome -Denv=dev
+
+mvn clean integration-test serenity:aggregate -pl SERENITY_CUCUMBER_TEST -am -Denv=dev -DwebDriverCustom=chrome -Dcucumber.options="classpath:features/test1.feature"
+
+mvn clean integration-test serenity:aggregate -pl SERENITY_CUCUMBER_TEST -am -Denv=dev -DwebDriverCustom=chrome -Dmaven.failsafe.debug="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8001 -Xnoagent -Djava.compiler=NONE"
