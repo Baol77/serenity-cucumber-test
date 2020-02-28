@@ -41,7 +41,8 @@ public class ChromeHeadlessCustom implements DriverSource {
             options.setAcceptInsecureCerts(true);
             options.addArguments("--no-sandbox");
             options.addArguments("--disable-gpu");
-            options.addArguments("--start-fullscreen");
+            //options.addArguments("--start-fullscreen");
+            options.addArguments("--window-size=1680,1050");
             options.addArguments("--incognito");
 
             options.setExperimentalOption("prefs", preferences());
